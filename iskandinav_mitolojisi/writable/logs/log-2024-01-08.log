@@ -1,0 +1,250 @@
+INFO - 2024-01-08 13:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 13:26:07 --> CSRF token verified.
+INFO - 2024-01-08 13:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 13:26:08 --> CSRF token verified.
+INFO - 2024-01-08 13:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 13:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 13:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 13:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 13:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:06:16 --> CSRF token verified.
+INFO - 2024-01-08 19:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:06:46 --> CSRF token verified.
+INFO - 2024-01-08 19:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:16:06 --> CSRF token verified.
+INFO - 2024-01-08 19:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:18:05 --> CSRF token verified.
+INFO - 2024-01-08 19:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-08 19:18:05 --> mysqli_sql_exception: Duplicate entry '0' for key 'tanrilar.PRIMARY' in D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ta...', 0)
+#1 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ta...')
+#2 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ta...')
+#3 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 D:\wamp64\www\iskandinav_mitolojisi\app\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\iskandinav_mitolojisi\app\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('Thor', 'thor', 'THOR\r\nKuzey Cer...', '1704741485_c8d1...')
+#6 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+#7 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#8 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\iskandinav_mitolojisi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-08 19:18:05 --> Duplicate entry '0' for key 'tanrilar.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tanrilar` (`baslik`, `url`, `icerik`, `resim`) VALUES (:baslik:, :url:, :icerik:, :resim:)', [...], false)
+ 2 APPPATH\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('Thor', 'thor', 'THOR
+Kuzey Cermenleri\'nin teleffuzu ile Thor, diğer Cermen halklarının teleffuzları ile Donar, Donner, Dunor, Thunraz, Thunor; çeşitli Cermen mitolojilerinde yer alan gök gürültüsü tanrısı.[1] Thor hakkındaki bilgilerin çoğu Cermen mitolojilerinde çok önemli bir yeri olan İskandinav mitolojisinde geçmektedir. Megingjord adlı sihirli bir kemeri ve Tanngniost ve Tanngnisrir (Diş Çatırdatan ve Diş Gıcırdatan) denilen iki keçisi vardır. Mjölnir adlı efsanevi çekici kullanmaktadır
+Thor, İskandinav mitolojisinde en güçlü tanrılardan biridir. Gücü babası Odin tarafından teslim edilmiş iki sihirli nesneye dayanmaktadır.[1] Bu nesnelerden biri Mjölnir\'dir.[1] "Miyölnir" diye okunur. Mjölnir, adının anlamı "parçalayıcı" olan kocaman bir çekiçtir. Çekici Brokk ve Eitri isimli iki cüce kardeş yapmıştır.[1] Çekiç yapılırken Loki sinek kılığına girip cüceleri ısırarak rahatsız edince bir kaza olmuş, çekicin sapı kısalmıştır.
+Bu iki cüce ayrıca bu çekice birçok farklı özellik vermiştir. Çekiç, Thor\'un onu kolayca saklayabilmesi için küçülebilir.[1] Ayrıca bir bumerang gibi, bir düşmana atılınca düşmana tüm gücüyle çarpar ve sahibinin ellerine geri döner. Thor kılık değiştireceği zaman çekici ile kendi yörüngesinde hızlıca döner. Fırtınaları çekici ile kontrol eder, yağmurları onunla yağdırır. Çekici ile evlilikleri ve nesneleri de kutsayabilir.
+Onun güçlü olmasını sağlayan bir diğer sihirli nesne de altın Megingjord adlı kemerdir.[1] Bu kemer Thor\'un gücünü 2 kat arttırır.
+', '1704741485_c8d1e18294ae5aae7bf0.png')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-08 19:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:18:30 --> CSRF token verified.
+INFO - 2024-01-08 19:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-08 19:18:30 --> mysqli_sql_exception: Duplicate entry '0' for key 'tanrilar.PRIMARY' in D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ta...', 0)
+#1 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ta...')
+#2 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ta...')
+#3 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 D:\wamp64\www\iskandinav_mitolojisi\app\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\iskandinav_mitolojisi\app\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('feq', 'feq', 'fwefeqfq', '1704741510_6771...')
+#6 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+#7 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#8 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\iskandinav_mitolojisi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-08 19:18:30 --> Duplicate entry '0' for key 'tanrilar.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tanrilar` (`baslik`, `url`, `icerik`, `resim`) VALUES (:baslik:, :url:, :icerik:, :resim:)', [...], false)
+ 2 APPPATH\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('feq', 'feq', 'fwefeqfq', '1704741510_67712c088a422f1fd622.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-08 19:19:08 --> CSRF token verified.
+INFO - 2024-01-08 19:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-08 19:19:08 --> mysqli_sql_exception: Duplicate entry '0' for key 'tanrilar.PRIMARY' in D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ta...', 0)
+#1 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ta...')
+#2 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ta...')
+#3 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 D:\wamp64\www\iskandinav_mitolojisi\app\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\iskandinav_mitolojisi\app\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('feq', 'feq', 'fwefeqfq', '1704741548_42fb...')
+#6 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+#7 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#8 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\iskandinav_mitolojisi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-08 19:19:08 --> Duplicate entry '0' for key 'tanrilar.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tanrilar` (`baslik`, `url`, `icerik`, `resim`) VALUES (:baslik:, :url:, :icerik:, :resim:)', [...], false)
+ 2 APPPATH\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('feq', 'feq', 'fwefeqfq', '1704741548_42fbbf5616f068812190.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-08 19:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:21:19 --> CSRF token verified.
+INFO - 2024-01-08 19:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-08 19:21:19 --> mysqli_sql_exception: Duplicate entry '0' for key 'tanrilar.PRIMARY' in D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp64\www\iskandinav_mitolojisi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ta...', 0)
+#1 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ta...')
+#2 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ta...')
+#3 D:\wamp64\www\iskandinav_mitolojisi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 D:\wamp64\www\iskandinav_mitolojisi\app\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\iskandinav_mitolojisi\app\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('rgeag', 'rgeag', 'dfrew', '1704741679_69f5...')
+#6 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+#7 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+#8 D:\wamp64\www\iskandinav_mitolojisi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\iskandinav_mitolojisi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-08 19:21:19 --> Duplicate entry '0' for key 'tanrilar.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tanrilar` (`baslik`, `url`, `icerik`, `resim`) VALUES (:baslik:, :url:, :icerik:, :resim:)', [...], false)
+ 2 APPPATH\Models\PanelModel.php(24): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Panel.php(71): App\Models\PanelModel->veri_ekle('rgeag', 'rgeag', 'dfrew', '1704741679_69f521ef3bad109f68de.png')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Panel->kayit_ekle()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-08 19:26:59 --> CSRF token verified.
+INFO - 2024-01-08 19:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:27:08 --> CSRF token verified.
+INFO - 2024-01-08 19:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:29:49 --> CSRF token verified.
+INFO - 2024-01-08 19:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:30:57 --> CSRF token verified.
+INFO - 2024-01-08 19:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:31:56 --> CSRF token verified.
+INFO - 2024-01-08 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:32:16 --> CSRF token verified.
+INFO - 2024-01-08 19:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:33:07 --> CSRF token verified.
+INFO - 2024-01-08 19:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:33:30 --> CSRF token verified.
+INFO - 2024-01-08 19:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:34:09 --> CSRF token verified.
+INFO - 2024-01-08 19:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 19:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-08 20:15:34 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anasayfa.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-08 20:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-08 20:16:48 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anasayfa.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 20:16:50 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anasayfa.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 20:16:50 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anasayfa.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 20:16:50 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anasayfa.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 20:16:50 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anasayfa.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 20:18:47 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Anasayfa.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 20:19:08 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Anasayfa.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\iskandinav_mitolojisi\\app\\Controllers\\Anasayfa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anasayfa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anasayfa')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Anasayfa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-08 20:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-08 20:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
