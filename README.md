@@ -1,0 +1,1 @@
+# iskandinav_mitolojisi
